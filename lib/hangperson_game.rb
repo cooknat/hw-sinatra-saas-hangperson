@@ -40,7 +40,7 @@ class HangpersonGame
     num_guesses = @guesses.length + @wrong_guesses.length
     if word_with_guesses == @word
       return :win
-    elsif num_guesses > 7
+    elsif num_guesses > @word.length + 4
       return :lose
     else
       return :play
