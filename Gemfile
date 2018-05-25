@@ -11,6 +11,7 @@ group :development, :test do
 
   gem 'rspec', '3.3.0'
   gem 'rspec-autotest', '1.0.0'
+  gem 'rspec-activemodel-mocks'
 
   gem 'rack-test', '0.6.3'
   gem 'rack_session_access', '0.1.1'

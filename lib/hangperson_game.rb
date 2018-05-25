@@ -17,7 +17,7 @@ class HangpersonGame
       if @word.include?(char.downcase) && !@guesses.include?(char.downcase) 
         @guesses = "#{@guesses}#{char}"
       elsif !@word.include?(char.downcase) && !@wrong_guesses.include?(char.downcase) 
-        @wrong_guesses += "#{@wrong_guesses}#{char}"
+        @wrong_guesses = "#{@wrong_guesses}#{char}"
       else
         return false  
       end         
